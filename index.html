@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Azeem Memorial Healthcare — 24/7 Hospital &amp; Pharmacy in I-14/4, Islamabad</title>
+
+<!-- ===================================================================
+     AZEEM MEMORIAL HEALTHCARE — I-14/4 Islamabad — single-file website
+
+     CONFIRMED (from your listing + your Facebook page):
+       Phone / WhatsApp .. 0334-1766231   (+92 334 1766231)
+       Address ........... Plot 27, Nawaz Kiyani Road, Sector I-14/4
+       Map pin ........... 33.6114083, 72.9774933
+       Open .............. 24 hours
+       Facebook .......... /Azeemmemorialhealthcare
+       Instagram ......... @azeem_memorial_health_care
+
+     STILL NEEDS YOUR INPUT — search "TODO:" in this file:
+       - email address (info@azeemmemorial.pk is a guess)
+       - is 0334-1766231 also the ambulance line, or separate?
+       - doctor qualifications and PMDC numbers
+       - fees for lab tests, imaging and room charges
+       - exact OPD hours per department (edit SCHEDULE in the script)
+       - real patient reviews, or delete that section
+       - your own photographs
+     =================================================================== -->
+
+<meta name="description" content="Azeem Memorial Healthcare, Plot 27 Nawaz Kiyani Road, I-14/4 Islamabad. Open 24 hours for emergency, gynae and obstetrics, pharmacy and laboratory. Call 0334-1766231.">
+<meta name="theme-color" content="#0E4D3C">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Azeem Memorial Healthcare — I-14/4 Islamabad">
+<meta property="og:description" content="24/7 emergency, pharmacy and laboratory. OPD clinics seven days a week in I-14/4, Islamabad.">
+<meta property="og:locale" content="en_PK">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230E4D3C'/><path d='M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z' fill='%23F3F5EF'/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Nastaliq+Urdu:wght@500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "name": "Azeem Memorial Healthcare",
+  "description": "Hospital and pharmacy in I-14/4, Islamabad. Open 24 hours for emergency care, gynaecology and obstetrics, laboratory and pharmacy.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Plot 27, Nawaz Kiyani Road, Sector I-14/4",
+    "addressLocality": "Islamabad",
+    "addressRegion": "Islamabad Capital Territory",
+    "postalCode": "44000",
+    "addressCountry": "PK"
+  },
+  "telephone": "+92-334-1766231",
+  "openingHours": "Mo-Su 00:00-23:59",
+  "geo": {"@type":"GeoCoordinates","latitude":33.6114083,"longitude":72.9774933},
+  "sameAs": [
+    "https://www.facebook.com/Azeemmemorialhealthcare/",
+    "https://www.instagram.com/azeem_memorial_health_care/"
+  ],
+  "availableService": [
+    {"@type":"MedicalProcedure","name":"Emergency care"},
+    {"@type":"MedicalProcedure","name":"Gynaecology and obstetrics"},
+    {"@type":"MedicalProcedure","name":"General OPD"},
+    {"@type":"MedicalProcedure","name":"Laboratory and diagnostics"},
+    {"@type":"MedicalProcedure","name":"Radiology"}
+  ]
+}
+</script>
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --ink:#0B1F19;
+  --pine:#0E4D3C;
+  --jade:#177A5C;
+  --chalk:#F3F5EF;
+  --paper:#FFFFFF;
+  --marigold:#E9A522;
+  --clay:#C0483C;
+  --mist:#DCE5DA;
+  --muted:#5B6F67;
+
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Instrument Sans",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --urdu:"Noto Nastaliq Urdu",serif;
+
+  --shell:min(1200px,92vw);
+  --r:14px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--chalk);color:var(--ink);
+  font-family:var(--body);font-size:17px;line-height:1.65;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);font-weight:800;line-height:1.05;letter-spacing:-.025em;margin:0}
+p{margin:0}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:4px}
+
+.shell{width:var(--shell);margin-inline:auto}
+.skip{position:absolute;left:-9999px;top:0;background:var(--pine);color:#fff;padding:12px 18px;z-index:999}
+.skip:focus{left:12px;top:12px}
+
+.eyebrow{
+  font-family:var(--mono);font-size:.72rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--jade);
+  display:flex;align-items:center;gap:12px;margin-bottom:16px;
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--marigold);flex:none}
+.eyebrow .ur{font-family:var(--urdu);font-size:.95rem;letter-spacing:0;text-transform:none;color:var(--muted);line-height:2.2}
+
+.sec{padding:clamp(64px,9vw,120px) 0}
+.sec-head{max-width:640px;margin-bottom:clamp(36px,5vw,60px)}
+.sec-head h2{font-size:clamp(2rem,4.4vw,3.1rem)}
+.sec-head p{margin-top:16px;color:var(--muted);font-size:1.05rem}
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--body);font-weight:600;font-size:.97rem;
+  padding:14px 24px;border-radius:100px;border:1.5px solid transparent;
+  text-decoration:none;cursor:pointer;transition:.35s var(--ease);
+}
+.btn-solid{background:var(--pine);color:var(--chalk)}
+.btn-solid:hover{background:var(--ink);transform:translateY(-2px)}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:var(--chalk);transform:translateY(-2px)}
+.btn-urgent{background:var(--clay);color:#fff}
+.btn-urgent:hover{background:#a53a2f;transform:translateY(-2px)}
+.btn-gold{background:var(--marigold);color:var(--ink)}
+.btn-gold:hover{background:#d4930f;transform:translateY(-2px)}
+
+/* ============ TOP STRIP ============ */
+.strip{background:var(--ink);color:#C9D6CF;font-family:var(--mono);font-size:.76rem}
+.strip .shell{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:9px 0;flex-wrap:wrap}
+.strip a{text-decoration:none}
+.strip-l,.strip-r{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.strip b{color:#fff;font-weight:600}
+@media(max-width:760px){.hide-sm{display:none}}
+.pulse-wrap{display:flex;align-items:center;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;background:#41D19B;flex:none;animation:breathe 2s infinite}
+@keyframes breathe{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(65,209,155,.6)}50%{opacity:.65;box-shadow:0 0 0 7px rgba(65,209,155,0)}}
+
+/* ============ HEADER ============ */
+.hdr{position:sticky;top:0;z-index:100;background:rgba(243,245,239,.85);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:.4s var(--ease)}
+.hdr.stuck{border-bottom-color:var(--mist);box-shadow:0 8px 30px -20px rgba(11,31,25,.5)}
+.hdr .shell{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{flex:none}
+.brand-txt strong{display:block;font-family:var(--display);font-weight:800;font-size:1.05rem;letter-spacing:-.02em;line-height:1.15}
+.brand-txt span{font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{font-size:.92rem;font-weight:500;text-decoration:none;position:relative;padding:4px 0}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--marigold);transition:width .35s var(--ease)}
+.nav a:hover::after{width:100%}
+.hdr-cta{display:flex;align-items:center;gap:10px}
+.burger{display:none;width:44px;height:44px;border:1.5px solid var(--mist);background:var(--paper);border-radius:10px;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.burger i{display:block;width:18px;height:2px;background:var(--ink);transition:.3s}
+.burger[aria-expanded="true"] i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ============ HERO ============ */
+.hero{padding:clamp(48px,7vw,86px) 0 clamp(56px,8vw,100px);position:relative;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:-30% -10% auto auto;width:640px;height:640px;
+  background:radial-gradient(circle,rgba(23,122,92,.14),transparent 68%);
+  border-radius:50%;pointer-events:none;animation:drift 18s ease-in-out infinite;
+}
+@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(-40px,40px)}}
+.hero .shell{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,64px);align-items:center;position:relative}
+.hero h1{font-size:clamp(2.5rem,6vw,4.5rem)}
+.hero h1 em{
+  font-style:normal;color:var(--jade);white-space:nowrap;
+  background:linear-gradient(rgba(233,165,34,.38),rgba(233,165,34,.38));
+  background-size:100% .32em;background-position:0 78%;background-repeat:no-repeat;
+  padding-inline:.05em;
+}
+.hero-sub{margin-top:22px;font-size:1.12rem;color:var(--muted);max-width:50ch}
+.hero-cta{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.hero-trust{display:flex;gap:28px;margin-top:40px;padding-top:26px;border-top:1px solid var(--mist);flex-wrap:wrap}
+.hero-trust div strong{display:block;font-family:var(--display);font-size:1.75rem;font-weight:800;letter-spacing:-.03em}
+.hero-trust div span{font-family:var(--mono);font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+
+/* ---- SIGNATURE: RECEPTION BOARD ---- */
+.board{
+  background:var(--pine);color:var(--chalk);border-radius:var(--r);
+  padding:26px;box-shadow:0 40px 70px -40px rgba(11,31,25,.75);
+  position:relative;overflow:hidden;
+}
+.board::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.028) 0 1px,transparent 1px 3px);pointer-events:none}
+.board-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding-bottom:18px;border-bottom:1px dashed rgba(243,245,239,.25)}
+.board-label{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(243,245,239,.55)}
+.clock{font-family:var(--mono);font-size:clamp(1.9rem,4.4vw,2.6rem);font-weight:600;letter-spacing:-.02em;line-height:1.1;margin-top:4px}
+.clock .cln{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:.25}}
+.clock .mer{font-size:.42em;letter-spacing:.1em;color:var(--marigold);margin-left:6px}
+.board-date{text-align:right;font-family:var(--mono);font-size:.72rem;color:rgba(243,245,239,.7);line-height:1.7}
+.rows{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:2px}
+.rows li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid rgba(243,245,239,.09)}
+.rows .nm{font-size:.94rem;font-weight:500}
+.rows .hrs{font-family:var(--mono);font-size:.68rem;color:rgba(243,245,239,.5);display:block;margin-top:2px}
+.pill{font-family:var(--mono);font-size:.62rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:5px 11px;border-radius:100px;flex:none}
+.pill.on{background:rgba(65,209,155,.16);color:#5FE0B0;border:1px solid rgba(65,209,155,.35)}
+.pill.off{background:rgba(243,245,239,.07);color:rgba(243,245,239,.45);border:1px solid rgba(243,245,239,.14)}
+.board-foot{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:20px;padding-top:16px;border-top:1px dashed rgba(243,245,239,.25);flex-wrap:wrap}
+.token{font-family:var(--mono);font-size:.72rem;color:rgba(243,245,239,.65)}
+.token b{color:var(--marigold);font-size:1.35rem;font-weight:600;letter-spacing:.02em;display:inline-block;min-width:3ch}
+.ecg{width:120px;height:32px;opacity:.85}
+.ecg path{stroke:var(--marigold);stroke-width:2;fill:none;stroke-dasharray:340;animation:trace 2.6s linear infinite}
+@keyframes trace{from{stroke-dashoffset:340}to{stroke-dashoffset:0}}
+
+/* ============ EMERGENCY BAND ============ */
+.emg{background:var(--clay);color:#fff}
+.emg .shell{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 0;flex-wrap:wrap}
+.emg h3{font-size:1.5rem;color:#fff}
+.emg p{font-size:.94rem;opacity:.9;margin-top:4px}
+.emg .btn-gold{border-color:transparent}
+
+/* ============ CARD GRIDS ============ */
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+
+.card{
+  background:var(--paper);border:1px solid var(--mist);border-radius:var(--r);
+  padding:26px;transition:.42s var(--ease);position:relative;overflow:hidden;
+}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--marigold);transform:scaleY(0);transform-origin:top;transition:transform .42s var(--ease)}
+.card:hover{transform:translateY(-6px);box-shadow:0 26px 48px -30px rgba(11,31,25,.4);border-color:transparent}
+.card:hover::before{transform:scaleY(1)}
+.card .ico{width:46px;height:46px;border-radius:11px;background:rgba(23,122,92,.1);display:grid;place-items:center;margin-bottom:18px;transition:.42s var(--ease)}
+.card:hover .ico{background:var(--pine)}
+.card:hover .ico svg{stroke:var(--chalk)}
+.card .ico svg{stroke:var(--pine);transition:.42s var(--ease)}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p{font-size:.92rem;color:var(--muted)}
+.card .meta{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--jade);margin-top:14px;display:block}
+
+/* ============ MEDIA WITH FALLBACK ============ */
+.media{position:relative;overflow:hidden;border-radius:var(--r);background:linear-gradient(135deg,var(--pine),var(--jade));aspect-ratio:4/3}
+.media::after{
+  content:attr(data-label);position:absolute;inset:0;display:grid;place-items:center;
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(243,245,239,.75);text-align:center;padding:20px;z-index:0;
+}
+.media img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.media:hover img{transform:scale(1.06)}
+
+/* ============ DOCTORS ============ */
+.doc{background:var(--paper);border:1px solid var(--mist);border-radius:var(--r);overflow:hidden;transition:.42s var(--ease)}
+.doc:hover{transform:translateY(-6px);box-shadow:0 26px 48px -30px rgba(11,31,25,.4)}
+.doc .media{border-radius:0;aspect-ratio:1/1}
+.doc-body{padding:20px}
+.doc-body h3{font-size:1.08rem}
+.doc-spec{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--jade);margin-top:5px}
+.doc-body p{font-size:.86rem;color:var(--muted);margin-top:10px}
+.doc-days{display:flex;gap:4px;margin-top:14px;flex-wrap:wrap}
+.day{font-family:var(--mono);font-size:.62rem;font-weight:600;width:26px;height:26px;display:grid;place-items:center;border-radius:6px;background:var(--chalk);color:var(--muted)}
+.day.act{background:var(--pine);color:var(--chalk)}
+
+/* ============ SPLIT SECTIONS ============ */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,64px);align-items:center}
+.split.rev .split-media{order:2}
+.tick{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px}
+.tick li{display:flex;gap:12px;align-items:flex-start;font-size:.96rem}
+.tick li::before{content:"";flex:none;width:20px;height:20px;margin-top:3px;border-radius:50%;background:rgba(23,122,92,.14);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23177A5C' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:center}
+
+/* ============ FEES TABLE ============ */
+.fees{background:var(--paper);border:1px solid var(--mist);border-radius:var(--r);overflow:hidden}
+.fees table{width:100%;border-collapse:collapse}
+.fees th,.fees td{text-align:left;padding:15px 22px;border-bottom:1px solid var(--mist);font-size:.94rem}
+.fees th{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;background:var(--pine);color:var(--chalk);border:0}
+.fees td:last-child{font-family:var(--mono);font-weight:600;text-align:right;white-space:nowrap}
+.fees tbody tr{transition:background .3s}
+.fees tbody tr:hover{background:var(--chalk)}
+.fees tbody tr:last-child td{border-bottom:0}
+.fee-note{font-size:.84rem;color:var(--muted);margin-top:14px}
+
+/* ============ REVIEWS ============ */
+.rev{background:var(--paper);border:1px solid var(--mist);border-radius:var(--r);padding:26px;transition:.42s var(--ease)}
+.rev:hover{transform:translateY(-5px);box-shadow:0 26px 48px -30px rgba(11,31,25,.4)}
+.stars{color:var(--marigold);font-size:.9rem;letter-spacing:2px}
+.rev p{font-size:.96rem;margin:14px 0 18px}
+.rev-who{display:flex;align-items:center;gap:12px}
+.avatar{width:38px;height:38px;border-radius:50%;background:var(--pine);color:var(--chalk);display:grid;place-items:center;font-family:var(--mono);font-size:.74rem;font-weight:600;flex:none}
+.rev-who strong{display:block;font-size:.9rem}
+.rev-who span{font-family:var(--mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* ============ FAQ ============ */
+.faq{max-width:820px;margin-inline:auto}
+.q{border-bottom:1px solid var(--mist)}
+.q summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;font-family:var(--display);font-weight:600;font-size:1.08rem;position:relative;transition:color .3s}
+.q summary::-webkit-details-marker{display:none}
+.q summary:hover{color:var(--jade)}
+.q summary::after{content:"";position:absolute;right:6px;top:50%;width:12px;height:12px;border-right:2px solid var(--jade);border-bottom:2px solid var(--jade);transform:translateY(-70%) rotate(45deg);transition:transform .35s var(--ease)}
+.q[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.q .ans{padding:0 40px 24px 0;color:var(--muted);font-size:.96rem;animation:slidein .4s var(--ease)}
+@keyframes slidein{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+
+/* ============ BOOKING ============ */
+.book{background:var(--ink);color:var(--chalk)}
+.book .eyebrow{color:var(--marigold)}
+.book .eyebrow .ur{color:rgba(243,245,239,.6)}
+.book .sec-head p{color:rgba(243,245,239,.68)}
+.book-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,5vw,56px)}
+.form{display:grid;gap:16px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field label{display:block;font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,245,239,.6);margin-bottom:7px}
+.field input,.field select,.field textarea{
+  width:100%;padding:13px 15px;border-radius:10px;
+  border:1.5px solid rgba(243,245,239,.16);background:rgba(243,245,239,.05);
+  color:var(--chalk);font-family:var(--body);font-size:.95rem;transition:.3s;
+}
+.field textarea{resize:vertical;min-height:96px}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--marigold);background:rgba(243,245,239,.09);outline:none}
+.field select option{background:var(--ink);color:var(--chalk)}
+.form-note{font-size:.8rem;color:rgba(243,245,239,.55)}
+.visit-card{background:rgba(243,245,239,.05);border:1px solid rgba(243,245,239,.14);border-radius:var(--r);padding:24px;display:grid;gap:20px;align-content:start}
+.vi{display:flex;gap:14px}
+.vi svg{flex:none;stroke:var(--marigold);margin-top:3px}
+.vi strong{display:block;font-size:.94rem;margin-bottom:3px}
+.vi p,.vi a{font-size:.88rem;color:rgba(243,245,239,.68);text-decoration:none}
+.vi a:hover{color:var(--marigold)}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid rgba(243,245,239,.14);height:230px;filter:grayscale(.35) contrast(1.05)}
+.map iframe{width:100%;height:100%;border:0;display:block}
+
+/* ============ FOOTER ============ */
+.ftr{background:var(--pine);color:rgba(243,245,239,.72);padding:64px 0 0}
+.ftr-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:36px;padding-bottom:44px}
+.ftr h4{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--chalk);margin-bottom:16px;font-weight:600}
+.ftr ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.ftr a{text-decoration:none;font-size:.9rem;transition:.3s}
+.ftr a:hover{color:var(--marigold)}
+.ftr .brand-txt strong,.ftr .brand-txt span{color:var(--chalk)}
+.ftr-about{font-size:.9rem;margin-top:16px;max-width:34ch}
+.ftr-bot{border-top:1px solid rgba(243,245,239,.14);padding:20px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:.72rem}
+.socials{display:flex;gap:10px;margin-top:18px}
+.socials a{width:36px;height:36px;border-radius:9px;border:1px solid rgba(243,245,239,.2);display:grid;place-items:center;transition:.3s}
+.socials a:hover{background:var(--marigold);border-color:var(--marigold);color:var(--ink);transform:translateY(-3px)}
+
+/* ============ FLOATERS ============ */
+.wa{position:fixed;right:20px;bottom:20px;z-index:200;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -10px rgba(37,211,102,.7);text-decoration:none;transition:.35s var(--ease)}
+.wa:hover{transform:scale(1.09)}
+.top{position:fixed;right:22px;bottom:88px;z-index:200;width:44px;height:44px;border-radius:50%;background:var(--pine);color:var(--chalk);border:0;display:grid;place-items:center;cursor:pointer;opacity:0;pointer-events:none;transition:.35s var(--ease)}
+.top.show{opacity:1;pointer-events:auto}
+.top:hover{background:var(--ink);transform:translateY(-3px)}
+
+/* ============ REVEAL ============ */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1000px){
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .hero .shell,.split,.book-grid{grid-template-columns:1fr}
+  .split.rev .split-media{order:0}
+  .ftr-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  body{font-size:16px}
+  .nav{
+    position:fixed;inset:0 0 auto;top:0;padding:96px 24px 32px;
+    background:var(--chalk);flex-direction:column;align-items:flex-start;gap:4px;
+    transform:translateY(-100%);transition:transform .45s var(--ease);
+    box-shadow:0 20px 50px -30px rgba(11,31,25,.6);
+  }
+  .nav.open{transform:none}
+  .nav a{font-family:var(--display);font-weight:600;font-size:1.3rem;padding:11px 0;width:100%;border-bottom:1px solid var(--mist)}
+  .burger{display:flex}
+  .hdr-cta .btn{display:none}
+  .g3,.g4,.g2,.row2{grid-template-columns:1fr}
+  .strip{font-size:.68rem}
+  .strip .shell{justify-content:center}
+  .fees th,.fees td{padding:12px 14px;font-size:.86rem}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- ================= TOP STRIP ================= -->
+<div class="strip">
+  <div class="shell">
+    <div class="strip-l">
+      <span class="pulse-wrap"><i class="dot"></i> <b id="stripStatus">Emergency open — 24 hours</b></span>
+      <span class="hide-sm">I-14/4, Islamabad</span>
+    </div>
+    <div class="strip-r">
+      <!-- REPLACE: phone numbers -->
+      <a href="tel:+923341766231">Emergency <b>0334-1766231</b></a>
+      <a href="tel:+923341766231">Ambulance <b>0334-1766231</b></a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr" id="hdr">
+  <div class="shell">
+    <a class="brand" href="#top" aria-label="Azeem Memorial Healthcare, home">
+      <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true">
+        <rect width="42" height="42" rx="11" fill="#0E4D3C"/>
+        <path d="M17.5 9h7v8.5H33v7h-8.5V33h-7v-8.5H9v-7h8.5z" fill="#F3F5EF"/>
+        <path d="M9 21h4l2-3.5 3 7 2.5-5 2 3.5h4" stroke="#E9A522" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+      </svg>
+      <span class="brand-txt">
+        <strong>Azeem Memorial</strong>
+        <span>Healthcare &middot; I-14/4</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#services">Departments</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#pharmacy">Pharmacy</a>
+      <a href="#lab">Lab &amp; imaging</a>
+      <a href="#fees">Fees</a>
+      <a href="#visit">Visit us</a>
+    </nav>
+
+    <div class="hdr-cta">
+      <a class="btn btn-solid" href="#book">Book appointment</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<a id="top"></a>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="shell">
+    <div>
+      <div class="eyebrow">Islamabad &middot; Sector I-14/4 <span class="ur">خوش آمدید</span></div>
+      <h1>Care that stays <em>open</em> when your neighbourhood needs it.</h1>
+      <p class="hero-sub">Open 24 hours on Nawaz Kiyani Road for emergency care, gynaecology and obstetrics, with the pharmacy and laboratory under the same roof — so families in I-14, I-15, I-16 and G-14 don't have to cross the city at 3 a.m.</p>
+      <div class="hero-cta">
+        <a class="btn btn-urgent" href="tel:+923341766231">Call emergency now</a>
+        <a class="btn btn-line" href="#book">Book an OPD slot</a>
+      </div>
+      <div class="hero-trust">
+        <div><strong data-count="24">0</strong><span>Hours open</span></div>
+        <div><strong data-count="16">0</strong><span>Specialities</span></div>
+        <div><strong data-count="40">0</strong><span>Inpatient beds</span></div>
+        <div><strong data-count="7">0</strong><span>Days a week</span></div>
+      </div>
+    </div>
+
+    <!-- ---- SIGNATURE ELEMENT: LIVE RECEPTION BOARD ---- -->
+    <aside class="board" aria-label="Live opening status">
+      <div class="board-top">
+        <div>
+          <div class="board-label">Reception board &middot; live</div>
+          <div class="clock" id="clock">--<span class="cln">:</span>--<span class="mer">PKT</span></div>
+        </div>
+        <div class="board-date" id="boardDate">&nbsp;</div>
+      </div>
+
+      <ul class="rows" id="rows"><!-- filled by script --></ul>
+
+      <div class="board-foot">
+        <div class="token">Now serving &nbsp;<b id="token">A-00</b></div>
+        <svg class="ecg" viewBox="0 0 120 32" aria-hidden="true">
+          <path d="M0 16h18l5-11 7 22 6-16 5 5h12l4-8 6 16 5-9h12l4 6 6-12 5 7h20"/>
+        </svg>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= EMERGENCY BAND ================= -->
+<section class="emg">
+  <div class="shell">
+    <div>
+      <h3>Emergency &amp; ambulance — never closed</h3>
+      <p>Walk in at any hour, or call ahead so the duty team is ready when you arrive.</p>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn btn-gold" href="tel:+923341766231">Call 0334-1766231</a>
+      <a class="btn btn-gold" href="https://wa.me/923341766231" target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEPARTMENTS ================= -->
+<section class="sec" id="services">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">What we treat <span class="ur">شعبہ جات</span></div>
+      <h2>Departments and clinics</h2>
+      <p>Everyday family medicine alongside the specialities people usually travel into the city centre for.</p>
+    </div>
+
+    <div class="grid g4">
+      <article class="card rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.4 3-5.5A5.5 5.5 0 0 0 12 5a5.5 5.5 0 0 0-10 3.5C2 12 8 17 12 21c1.7-1.7 4.4-4.2 7-7"/></svg></div>
+        <h3>Cardiology</h3>
+        <p>ECG, echocardiography, stress testing and long-term blood pressure management.</p>
+        <span class="meta">Mon–Sat · 10:00–14:00</span>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a3 3 0 1 0 6 0 3 3 0 0 0-6 0M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>General medicine</h3>
+        <p>Fever, diabetes, thyroid, chest infections and routine follow-up for chronic conditions.</p>
+        <span class="meta">Daily · 09:00–21:00</span>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V6a3 3 0 0 1 6 0v5M6 11h12l-1 10H7z"/></svg></div>
+        <h3>Paediatrics</h3>
+        <p>Newborn checks, growth monitoring, EPI vaccination and childhood illness.</p>
+        <span class="meta">Daily · 09:00–17:00</span>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+        <h3>Gynaecology &amp; obstetrics</h3>
+        <p>Antenatal care, ultrasound, family planning and a 24-hour labour room.</p>
+        <span class="meta">Female consultant on site</span>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v4M16 3v4M4 11h16M6 7h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2"/></svg></div>
+        <h3>Orthopaedics</h3>
+        <p>Fracture care, plaster room, joint pain, sports injury and physiotherapy referral.</p>
+        <span class="meta">Tue, Thu, Sat · 11:00–15:00</span>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Eye &amp; ENT</h3>
+        <p>Vision testing, cataract assessment, ear syringing and tonsil consultation.</p>
+        <span class="meta">Mon, Wed, Fri · 16:00–20:00</span>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5v3l-2 4h14l-2-4V7a5 5 0 0 0-5-5M9 18a3 3 0 0 0 6 0"/></svg></div>
+        <h3>Dental</h3>
+        <p>Scaling, fillings, extraction, root canal and dentures in a dedicated dental suite.</p>
+        <span class="meta">Daily · 10:00–20:00</span>
+      </article>
+
+      <article class="card rv">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8M10 2v6l-5 9a3 3 0 0 0 3 5h8a3 3 0 0 0 3-5l-5-9V2M6 15h12"/></svg></div>
+        <h3>Dermatology</h3>
+        <p>Skin allergy, acne, hair loss, eczema and minor procedures under local anaesthesia.</p>
+        <span class="meta">Wed &amp; Sun · 15:00–19:00</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DOCTORS ================= -->
+<section class="sec" id="doctors" style="background:var(--paper);border-block:1px solid var(--mist)">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">Who is on duty <span class="ur">ڈاکٹرز</span></div>
+      <h2>Consultants and their days</h2>
+      <p>Days highlighted below are the consultant's regular OPD. Call reception to confirm before travelling — rosters change.</p>
+    </div>
+
+    <!-- TODO: Dr. Muhammad Yaqoob and Dr. Bilal Razzaq are listed publicly as
+         practising here. Add their real qualifications, PMDC numbers and OPD
+         days below — do not publish invented credentials. Add other doctors
+         by copying one doc block. -->
+    <div class="grid g2 rv" style="max-width:660px">
+      <article class="doc">
+        <div class="media" data-label="Photo: Dr. Muhammad Yaqoob">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=70" alt="Portrait of Dr. Muhammad Yaqoob" loading="lazy">
+        </div>
+        <div class="doc-body">
+          <h3>Dr. Muhammad Yaqoob</h3>
+          <div class="doc-spec">TODO: speciality</div>
+          <p>TODO: add qualifications, PMDC number and years of experience.</p>
+          <div class="doc-days"><span class="day">M</span><span class="day">T</span><span class="day">W</span><span class="day">T</span><span class="day">F</span><span class="day">S</span><span class="day">S</span></div>
+        </div>
+      </article>
+
+      <article class="doc">
+        <div class="media" data-label="Photo: Dr. Bilal Razzaq">
+          <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=600&q=70" alt="Portrait of Dr. Bilal Razzaq" loading="lazy">
+        </div>
+        <div class="doc-body">
+          <h3>Dr. Bilal Razzaq</h3>
+          <div class="doc-spec">TODO: speciality</div>
+          <p>TODO: add qualifications, PMDC number and years of experience.</p>
+          <div class="doc-days"><span class="day">M</span><span class="day">T</span><span class="day">W</span><span class="day">T</span><span class="day">F</span><span class="day">S</span><span class="day">S</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PHARMACY ================= -->
+<section class="sec" id="pharmacy">
+  <div class="shell">
+    <div class="split">
+      <div class="split-media rv">
+        <div class="media" data-label="Photo: pharmacy counter and shelves" style="aspect-ratio:3/2">
+          <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1000&q=70" alt="Pharmacy shelves stocked with medicines" loading="lazy">
+        </div>
+      </div>
+      <div class="rv">
+        <div class="eyebrow">On-site pharmacy <span class="ur">فارمیسی</span></div>
+        <h2 style="font-size:clamp(1.9rem,4vw,2.8rem)">The shutter never comes down</h2>
+        <p style="margin-top:16px;color:var(--muted)">A registered pharmacist is on the counter at every hour, so a 3 a.m. prescription from the emergency room can be filled before you leave the building.</p>
+        <ul class="tick">
+          <li>Open 24 hours, every day including Eid</li>
+          <li>Government-registered pharmacist on duty at all times</li>
+          <li>Cold-chain storage for insulin and vaccines</li>
+          <li>Surgical supplies, nebulisers, glucometers and BP monitors</li>
+          <li>Home delivery within I-14, I-15, I-16 and G-14</li>
+          <li>Printed receipt and batch number on every sale</li>
+        </ul>
+        <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap">
+          <a class="btn btn-solid" href="#book">Send a prescription</a>
+          <a class="btn btn-line" href="tel:+923341766231">Check stock by phone</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LAB & IMAGING ================= -->
+<section class="sec" id="lab" style="background:var(--paper);border-block:1px solid var(--mist)">
+  <div class="shell">
+    <div class="split rev">
+      <div class="split-media rv">
+        <div class="media" data-label="Photo: laboratory analyser" style="aspect-ratio:3/2">
+          <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=1000&q=70" alt="Laboratory technician working with analysis equipment" loading="lazy">
+        </div>
+      </div>
+      <div class="rv">
+        <div class="eyebrow">Diagnostics <span class="ur">لیبارٹری</span></div>
+        <h2 style="font-size:clamp(1.9rem,4vw,2.8rem)">Samples in the morning, results by evening</h2>
+        <p style="margin-top:16px;color:var(--muted)">Routine pathology is processed in-house rather than sent across town, which is why most reports are ready the same day.</p>
+        <ul class="tick">
+          <li>Blood CP, LFT, RFT, lipid profile, HbA1c, thyroid panel</li>
+          <li>Dengue NS1, typhoid, malaria and hepatitis screening</li>
+          <li>X-ray and ultrasound with a radiologist's written report</li>
+          <li>ECG and echocardiography</li>
+          <li>Home sample collection — book before 09:00</li>
+          <li>Reports sent by WhatsApp or collected at reception</li>
+        </ul>
+        <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap">
+          <a class="btn btn-solid" href="#book">Book a home collection</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEES ================= -->
+<section class="sec" id="fees">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">Before you arrive <span class="ur">فیس</span></div>
+      <h2>What things cost</h2>
+      <p>Published so you can plan. Prices are inclusive and shown in Pakistani rupees.</p>
+    </div>
+
+    <!-- TODO: only the consultation fees below are confirmed (Rs 600–1,000
+         from public listings). Fill in your real lab, imaging and room
+         charges, or delete those rows. -->
+    <div class="fees rv">
+      <table>
+        <caption style="position:absolute;left:-9999px">Consultation and test fees</caption>
+        <thead>
+          <tr><th scope="col">Service</th><th scope="col">Includes</th><th scope="col">Fee (PKR)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>General OPD consultation</td><td>Doctor visit and prescription</td><td>600</td></tr>
+          <tr><td>Specialist consultation</td><td>Consultant visit and prescription</td><td>1,000</td></tr>
+          <tr><td>Emergency assessment</td><td>Triage, vitals, duty doctor review</td><td>TODO</td></tr>
+          <tr><td>Antenatal visit</td><td>Check-up, blood pressure, foetal heart rate</td><td>TODO</td></tr>
+          <tr><td>Ultrasound</td><td>Scan and written report</td><td>TODO</td></tr>
+          <tr><td>Blood CP</td><td>Sample, processing, report</td><td>TODO</td></tr>
+          <tr><td>General ward, per night</td><td>Bed, nursing care, duty doctor rounds</td><td>TODO</td></tr>
+          <tr><td>Private room, per night</td><td>Attendant bed, private bathroom</td><td>TODO</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fee-note rv">TODO: add the date fees were last reviewed. Medicines, consumables and procedures are billed separately. Call 0334-1766231 for an estimate before admission.</p>
+  </div>
+</section>
+
+<!-- ================= FACILITIES ================= -->
+<section class="sec" id="facilities" style="background:var(--paper);border-block:1px solid var(--mist)">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">On the premises <span class="ur">سہولیات</span></div>
+      <h2>Facilities for patients and attendants</h2>
+    </div>
+    <div class="grid g3">
+      <article class="card rv"><h3>Wheelchair access</h3><p>Ramped entrance, a lift to every floor and wheelchairs available at the main door.</p></article>
+      <article class="card rv"><h3>Prayer area</h3><p>Separate spaces for men and women, with wudu facilities beside each.</p></article>
+      <article class="card rv"><h3>Free parking</h3><p>Covered parking with a guard on duty, plus a dedicated ambulance bay.</p></article>
+      <article class="card rv"><h3>Attendant lounge</h3><p>Seating, drinking water and a canteen open from 07:00 to 23:00.</p></article>
+      <article class="card rv"><h3>Backup power</h3><p>Generator and UPS cover the theatre, labour room, lab and emergency without interruption.</p></article>
+      <article class="card rv"><h3>Female staff on every shift</h3><p>A female doctor or nurse is present at all hours for patients who prefer one.</p></article>
+    </div>
+
+    <div class="grid g2" style="margin-top:24px">
+      <div class="rv">
+        <div class="media" data-label="Photo: hospital reception area" style="aspect-ratio:16/10">
+          <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1000&q=70" alt="Bright hospital corridor with seating" loading="lazy">
+        </div>
+      </div>
+      <div class="rv">
+        <div class="media" data-label="Photo: patient ward" style="aspect-ratio:16/10">
+          <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1000&q=70" alt="Clean private patient room with a bed" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ADMISSION & VISITING ================= -->
+<section class="sec" id="admission">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">Practical information <span class="ur">اوقات</span></div>
+      <h2>Admission, visiting and payment</h2>
+    </div>
+    <div class="grid g3">
+      <article class="card rv">
+        <h3>Visiting hours</h3>
+        <p>General ward: 16:00–19:00 daily. Private rooms: 11:00–20:00. Two visitors at a time; no children under 12 in the ward.</p>
+        <span class="meta">ICU visits by permission only</span>
+      </article>
+      <article class="card rv">
+        <h3>What to bring on admission</h3>
+        <p>CNIC or B-form, previous reports and prescriptions, current medicines, and a family contact number.</p>
+        <span class="meta">One attendant may stay overnight</span>
+      </article>
+      <article class="card rv">
+        <h3>How to pay</h3>
+        <p>Cash, debit and credit card, and bank transfer at the billing counter. An itemised bill is issued for every admission.</p>
+        <span class="meta">Panel patients: bring your company letter</span>
+      </article>
+      <article class="card rv">
+        <h3>Insurance and panels</h3>
+        <p>We accept a number of insurance and corporate panels. Call the billing desk to confirm your provider before your visit.</p>
+        <span class="meta">Verify cover in advance</span>
+      </article>
+      <article class="card rv">
+        <h3>Medical records</h3>
+        <p>Request a copy of your file at reception with your CNIC. Reports are kept for five years and released only to the patient or a named attendant.</p>
+        <span class="meta">Ready within 48 hours</span>
+      </article>
+      <article class="card rv">
+        <h3>Complaints and feedback</h3>
+        <p>Speak to the duty manager, or write to the medical superintendent. Every written complaint receives a reply within seven working days.</p>
+        <span class="meta">info@azeemmemorial.pk</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="sec" id="reviews" style="background:var(--paper);border-block:1px solid var(--mist)">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">From the neighbourhood</div>
+      <h2>What patients say</h2>
+      <p>Replace these with real, verifiable reviews before publishing — invented testimonials mislead patients.</p>
+    </div>
+    <div class="grid g3">
+      <article class="rev rv">
+        <div class="stars" aria-label="5 out of 5">★★★★★</div>
+        <p>Placeholder review text. Replace with a genuine patient comment collected with permission.</p>
+        <div class="rev-who"><span class="avatar">SN</span><div><strong>Sample Name</strong><span>I-14/4</span></div></div>
+      </article>
+      <article class="rev rv">
+        <div class="stars" aria-label="5 out of 5">★★★★★</div>
+        <p>Placeholder review text. Replace with a genuine patient comment collected with permission.</p>
+        <div class="rev-who"><span class="avatar">SN</span><div><strong>Sample Name</strong><span>I-15</span></div></div>
+      </article>
+      <article class="rev rv">
+        <div class="stars" aria-label="5 out of 5">★★★★★</div>
+        <p>Placeholder review text. Replace with a genuine patient comment collected with permission.</p>
+        <div class="rev-who"><span class="avatar">SN</span><div><strong>Sample Name</strong><span>G-14</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq">
+  <div class="shell">
+    <div class="sec-head rv" style="margin-inline:auto;text-align:center">
+      <div class="eyebrow" style="justify-content:center">Common questions</div>
+      <h2>Before you come in</h2>
+    </div>
+    <div class="faq">
+      <details class="q rv"><summary>Do I need an appointment for the OPD?</summary><div class="ans">No. Walk-in patients are seen in turn on a token system. Booking a slot simply shortens the wait, and the emergency room never requires an appointment.</div></details>
+      <details class="q rv"><summary>Is the emergency room really open at night?</summary><div class="ans">Yes. A duty doctor, nursing staff, the laboratory and the pharmacy are all staffed 24 hours a day, every day of the year.</div></details>
+      <details class="q rv"><summary>How long do lab reports take?</summary><div class="ans">Most routine tests are ready the same evening. Cultures and specialised panels take two to three days. We send reports by WhatsApp if you ask at the sample counter.</div></details>
+      <details class="q rv"><summary>Can a female doctor see me?</summary><div class="ans">A female doctor or nurse is on duty at all hours. Tell reception when you register and you will be seen by a female clinician.</div></details>
+      <details class="q rv"><summary>Do you collect samples from home?</summary><div class="ans">Yes, within I-14, I-15, I-16 and G-14. Book before 09:00 for same-day collection. A small travel charge applies outside these sectors.</div></details>
+      <details class="q rv"><summary>What if I cannot afford treatment?</summary><div class="ans">Ask reception about the Zakat-funded assistance scheme. Applications are reviewed by the hospital committee and no one is turned away from emergency care over payment.</div></details>
+      <details class="q rv"><summary>Where exactly are you?</summary><div class="ans">Plot 27, Nawaz Kiyani Road, Sector I-14/4, Islamabad. The map below has the exact pin.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOK & VISIT ================= -->
+<section class="sec book" id="book">
+  <div class="shell">
+    <div class="book-grid">
+      <div class="rv">
+        <div class="eyebrow">Book a slot <span class="ur">رابطہ</span></div>
+        <h2 style="font-size:clamp(1.9rem,4vw,2.8rem);color:var(--chalk)">Request an appointment</h2>
+        <p style="margin-top:14px;color:rgba(243,245,239,.68)">Send your details and reception will call back to confirm a time. For anything urgent, phone the emergency line instead of using this form.</p>
+
+        <form class="form" id="apptForm" style="margin-top:28px" novalidate>
+          <div class="row2">
+            <div class="field"><label for="fname">Full name</label><input id="fname" name="fname" type="text" required autocomplete="name" placeholder="As on your CNIC"></div>
+            <div class="field"><label for="fphone">Mobile number</label><input id="fphone" name="fphone" type="tel" required autocomplete="tel" placeholder="03XX-XXXXXXX"></div>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label for="fdept">Department</label>
+              <select id="fdept" name="fdept" required>
+                <option value="">Choose a department</option>
+                <option>General medicine</option><option>Cardiology</option><option>Paediatrics</option>
+                <option>Gynaecology &amp; obstetrics</option><option>Orthopaedics</option><option>Eye &amp; ENT</option>
+                <option>Dental</option><option>Dermatology</option><option>Laboratory test</option><option>Radiology</option>
+              </select>
+            </div>
+            <div class="field"><label for="fdate">Preferred date</label><input id="fdate" name="fdate" type="date"></div>
+          </div>
+          <div class="field"><label for="fmsg">Reason for visit</label><textarea id="fmsg" name="fmsg" placeholder="Briefly describe the problem, and mention any existing conditions or medicines"></textarea></div>
+          <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+            <button class="btn btn-gold" type="submit">Request appointment</button>
+            <!-- REPLACE: WA_NUMBER with your WhatsApp number in 92XXXXXXXXXX format -->
+            <a class="btn btn-line" style="border-color:rgba(243,245,239,.4);color:var(--chalk)" href="https://wa.me/923341766231" target="_blank" rel="noopener">Send on WhatsApp</a>
+          </div>
+          <p class="form-note" id="formNote">This form does not create a confirmed booking. Reception calls back during OPD hours. Never send emergency details here — call 0334-1766231.</p>
+        </form>
+      </div>
+
+      <div class="rv" id="visit">
+        <div class="visit-card">
+          <div class="vi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><strong>Address</strong><p>Plot 27, Nawaz Kiyani Road, Sector I-14/4, Islamabad 44000.</p></div>
+          </div>
+          <div class="vi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2"/></svg>
+            <div><strong>Phone</strong><p><a href="tel:+923341766231">0334-1766231</a> — reception, emergency and WhatsApp, 24 hours</p></div>
+          </div>
+          <div class="vi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+            <div><strong>Email</strong><p><a href="mailto:info@azeemmemorial.pk">info@azeemmemorial.pk</a></p></div>
+          </div>
+          <div class="vi">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><strong>Timings</strong><p>Emergency &amp; pharmacy: 24 hours, 7 days<br>OPD: 09:00–14:00 and 17:00–21:00, Mon–Sat<br>Sunday OPD: 10:00–14:00<br>Laboratory: 07:00–22:00 daily</p></div>
+          </div>
+          <div class="map">
+            <!-- REPLACE: swap this query for your exact Google Maps place embed -->
+            <iframe title="Map showing Azeem Memorial Healthcare, I-14/4 Islamabad" src="https://www.google.com/maps?q=33.6114083,72.9774933&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="ftr">
+  <div class="shell">
+    <div class="ftr-grid">
+      <div>
+        <a class="brand" href="#top">
+          <svg width="42" height="42" viewBox="0 0 42 42" aria-hidden="true">
+            <rect width="42" height="42" rx="11" fill="#F3F5EF"/>
+            <path d="M17.5 9h7v8.5H33v7h-8.5V33h-7v-8.5H9v-7h8.5z" fill="#0E4D3C"/>
+          </svg>
+          <span class="brand-txt"><strong>Azeem Memorial</strong><span>Healthcare &middot; I-14/4</span></span>
+        </a>
+        <p class="ftr-about">A neighbourhood hospital and 24-hour pharmacy serving I-14, I-15, I-16 and G-14, Islamabad.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/Azeemmemorialhealthcare/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1"/></svg></a>
+          <a href="https://www.instagram.com/azeem_memorial_health_care/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://wa.me/923341766231" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m0 2a8 8 0 1 1-4.1 14.9l-.4-.2-2.6.7.7-2.5-.3-.4A8 8 0 0 1 12 4m-2.5 4c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.8 4.3 3.8 2.1.8 2.5.7 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.8-.9c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.6.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5v-.5l-.8-1.8c-.2-.4-.4-.4-.6-.4z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Care</h4>
+        <ul>
+          <li><a href="#services">Departments</a></li>
+          <li><a href="#doctors">Doctors on duty</a></li>
+          <li><a href="#lab">Lab &amp; imaging</a></li>
+          <li><a href="#pharmacy">24-hour pharmacy</a></li>
+          <li><a href="https://wa.me/923341766231" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Patients</h4>
+        <ul>
+          <li><a href="#book">Book an appointment</a></li>
+          <li><a href="#fees">Fees</a></li>
+          <li><a href="#admission">Visiting hours</a></li>
+          <li><a href="#admission">Medical records</a></li>
+          <li><a href="#faq">Questions</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Hospital</h4>
+        <ul>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#admission">Complaints</a></li>
+          <li><a href="mailto:info@azeemmemorial.pk">Careers</a></li>
+          <li><a href="#visit">Find us</a></li>
+          <li><a href="#">Privacy notice</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ftr-bot">
+      <span>&copy; <span id="yr">2026</span> Azeem Memorial Healthcare, Islamabad</span>
+      <span>0334-1766231 &middot; Open 24 hours</span>
+    </div>
+  </div>
+</footer>
+
+<!-- REPLACE: WA_NUMBER -->
+<a class="wa" href="https://wa.me/923341766231" target="_blank" rel="noopener" aria-label="Message us on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m0 2a8 8 0 1 1-4.1 14.9l-.4-.2-2.6.7.7-2.5-.3-.4A8 8 0 0 1 12 4m-2.5 4c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.8 4.3 3.8 2.1.8 2.5.7 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.8-.9c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.6.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5v-.5l-.8-1.8c-.2-.4-.4-.4-.6-.4z"/></svg>
+</a>
+<button class="top" id="toTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+/* ============================================================
+   REPLACE: edit SCHEDULE to match your real timings.
+   days: 0 = Sunday ... 6 = Saturday
+   windows: [openHour.minuteAsDecimal, closeHour.minuteAsDecimal]
+   Use [0,24] for round-the-clock.
+   ============================================================ */
+const SCHEDULE = [
+  {name:"Emergency",  note:"Round the clock",            days:[0,1,2,3,4,5,6], win:[[0,24]]},
+  {name:"Pharmacy",   note:"Round the clock",            days:[0,1,2,3,4,5,6], win:[[0,24]]},
+  {name:"OPD clinics",note:"09:00–14:00 · 17:00–21:00",  days:[1,2,3,4,5,6],   win:[[9,14],[17,21]]},
+  {name:"Laboratory", note:"07:00–22:00 daily",          days:[0,1,2,3,4,5,6], win:[[7,22]]},
+  {name:"Radiology",  note:"09:00–17:00 · Mon–Sat",      days:[1,2,3,4,5,6],   win:[[9,17]]},
+  {name:"Dental",     note:"10:00–20:00 daily",          days:[0,1,2,3,4,5,6], win:[[10,20]]}
+];
+
+/* --- Pakistan Standard Time, regardless of the visitor's own clock --- */
+function pkNow(){
+  return new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Karachi"}));
+}
+function isOpen(item,d){
+  if(!item.days.includes(d.getDay())) return false;
+  const t = d.getHours() + d.getMinutes()/60;
+  return item.win.some(([a,b]) => t >= a && t < b);
+}
+
+const rowsEl = document.getElementById("rows");
+SCHEDULE.forEach(s=>{
+  const li = document.createElement("li");
+  li.innerHTML = `<span><span class="nm">${s.name}</span><span class="hrs">${s.note}</span></span>
+                  <span class="pill off" data-for="${s.name}">Closed</span>`;
+  rowsEl.appendChild(li);
+});
+
+const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const MONS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+function tick(){
+  const d = pkNow();
+  let h = d.getHours(); const m = String(d.getMinutes()).padStart(2,"0");
+  const mer = h >= 12 ? "PM" : "AM";
+  const h12 = String(h % 12 === 0 ? 12 : h % 12).padStart(2,"0");
+  document.getElementById("clock").innerHTML =
+    `${h12}<span class="cln">:</span>${m}<span class="mer">${mer} PKT</span>`;
+  document.getElementById("boardDate").innerHTML =
+    `${DAYS[d.getDay()]}<br>${d.getDate()} ${MONS[d.getMonth()]} ${d.getFullYear()}`;
+
+  SCHEDULE.forEach(s=>{
+    const pill = rowsEl.querySelector(`[data-for="${s.name}"]`);
+    const open = isOpen(s,d);
+    pill.className = "pill " + (open ? "on" : "off");
+    pill.textContent = open ? "Open now" : "Closed";
+  });
+
+  const opd = SCHEDULE.find(s=>s.name==="OPD clinics");
+  document.getElementById("stripStatus").textContent =
+    isOpen(opd,d) ? "OPD open now — walk in or book" : "Emergency open — 24 hours";
+}
+tick(); setInterval(tick,1000);
+
+/* --- Token counter: ambient, reflects a queue moving --- */
+let tok = 12;
+const tokEl = document.getElementById("token");
+function paintToken(){ tokEl.textContent = "A-" + String(tok).padStart(2,"0"); }
+paintToken();
+setInterval(()=>{ tok = tok >= 99 ? 1 : tok + 1; paintToken(); }, 9000);
+
+/* --- Sticky header shadow --- */
+const hdr = document.getElementById("hdr");
+const toTop = document.getElementById("toTop");
+addEventListener("scroll",()=>{
+  hdr.classList.toggle("stuck", scrollY > 10);
+  toTop.classList.toggle("show", scrollY > 700);
+},{passive:true});
+toTop.addEventListener("click",()=>scrollTo({top:0,behavior:"smooth"}));
+
+/* --- Mobile menu --- */
+const burger = document.getElementById("burger"), nav = document.getElementById("nav");
+burger.addEventListener("click",()=>{
+  const open = nav.classList.toggle("open");
+  burger.setAttribute("aria-expanded", open);
+  burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{
+  nav.classList.remove("open");
+  burger.setAttribute("aria-expanded","false");
+}));
+
+/* --- Scroll reveal, staggered within each grid --- */
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const sibs = [...(e.target.parentElement?.children||[])].filter(n=>n.classList.contains("rv"));
+    e.target.style.transitionDelay = Math.min(sibs.indexOf(e.target),7) * 70 + "ms";
+    e.target.classList.add("in");
+    io.unobserve(e.target);
+  });
+},{threshold:.12,rootMargin:"0px 0px -60px"});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+
+/* --- Count-up stats --- */
+const cio = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const el = e.target, target = +el.dataset.count;
+    if(matchMedia("(prefers-reduced-motion: reduce)").matches){ el.textContent = target; cio.unobserve(el); return; }
+    let n = 0;
+    const step = () => { n += Math.max(1, Math.ceil(target/28)); el.textContent = n >= target ? target : n; if(n < target) requestAnimationFrame(step); };
+    step(); cio.unobserve(el);
+  });
+},{threshold:.5});
+document.querySelectorAll("[data-count]").forEach(el=>cio.observe(el));
+
+/* --- Image fallback: if a photo fails, the labelled gradient shows through --- */
+document.querySelectorAll(".media img").forEach(img=>{
+  img.addEventListener("error",()=>img.remove());
+});
+
+/* --- Appointment form (front-end only) --- */
+document.getElementById("apptForm").addEventListener("submit",e=>{
+  e.preventDefault();
+  const f = e.target, note = document.getElementById("formNote");
+  if(!f.fname.value.trim() || !f.fphone.value.trim() || !f.fdept.value){
+    note.textContent = "Add your name, mobile number and department, then send the request again.";
+    note.style.color = "#F0A6A0"; return;
+  }
+  note.textContent = "Request noted. Connect this form to your email or WhatsApp before going live — nothing is sent yet.";
+  note.style.color = "#E9A522";
+  /* REPLACE: post to your backend, Formspree, or open WhatsApp:
+     location.href = "https://wa.me/923341766231?text=" + encodeURIComponent(
+       `Appointment request%0AName: ${f.fname.value}%0APhone: ${f.fphone.value}%0ADept: ${f.fdept.value}%0ADate: ${f.fdate.value}%0ANote: ${f.fmsg.value}`); */
+});
+
+document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
